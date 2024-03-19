@@ -1,0 +1,13 @@
+home 
+login
+admin-login
+admin
+users
+singup
+forget-password
+home2
+add-photos
+view-photo
+viedeoview
+about-us
+account

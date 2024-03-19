@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div id="login-box">
+            <h1 class="text-center">Forgot Password</h1>
+            <form action="{{ url_for('forgot') }}" method="post" class="form">
+                <div class="form-group">
+                <label for="enter username">ENTER USERNAME</label>
+                <input type="text" class="form" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                <label for="favorite-sport">Security question</label>
+                <input type="password" id="favourite_sport" name="favourite_sport" placeholder="Enter your favorite sport" required>
+                </div>
+                <div class="form-group">
+                <label for="favorite-sport">PASSWORD</label>
+                <input type="password" placeholder="Enter your new password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-default btn-custom">Reset
+                    Password</button>
+                <p class="forgot-password"><a class="bottom" href="{{url_for('login')}}">Back to Login</a></p>
+                {% if message %}
+                  <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+
+
+    <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
+    <script src="{{ url_for('static', filename='forgot.js') }}"></script>
+</body>
+
+</html>

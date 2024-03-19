@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #162639;
+}
+
+#navbar {
+  width: 5vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #b3b3db;
+  margin-left: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+#navbar-items {
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4vh;
+}
+
+#login {
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+}
+
+.icons {
+  text-decoration: none;
+  color: #162639;
+  font-size: x-large;
+}
+
+.current {
+  background-color: #162639;
+  border-radius: 50%;
+  height: 4vh;
+  width: 2vw;
+  padding-top: 0.5vh;
+  text-align: center;
+  color: #b4b4db;
+  font-size: x-large;
+}
+
+#profile {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+  margin-left: 1vw;
+}
+
+#navbar:hover {
+  width: 12vw;
+}
+
+#navbar:hover .current {
+  width: 11vw;
+}
+
+#navbar:hover .hidden {
+  display: inline-block;
+}
+
+.container {
+  width: 45vw;
+  margin-left: 33vw;
+  background: linear-gradient(135deg, #cbd7df, #f0f0f0);
+  padding: 4vw;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s ease-in-out;
+  background-color: #e6e6fa;
+  font-family: cursive, sans-serif;
+}
+
+.container:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: xx-large;
+  margin-bottom: 1.2vh;
+}
+
+form {
+  text-align: center;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 1.3vh;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2d6f2f, #26782a);
+  color: #fff;
+  border-radius: 12px;
+  font-size: large;
+  transition: background 0.3s ease-in-out;
+}
+
+.custom-file-upload:hover {
+  background: linear-gradient(135deg, #45a049, #4caf50);
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.drop-container {
+  border: 2px dashed #162639;
+  color: #162639;
+  background-color: #f9f9f9;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 3.8vh;
+  padding-bottom: 3.8vh;
+  border-radius: 12px;
+  text-align: center;
+  font-size: x-large;
+  margin-top: 6vh;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.drop-container:hover {
+  background-color: rgb(169, 169, 213);
+}
+
+.image-preview {
+  margin-top: 4vh;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.8vw 1.5vh 0;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards, slideIn 0.3s ease-out forwards;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  border-color: #4caf50;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  height: 1.4vw;
+  width: 1.4vw;
+  color: #fff;
+  cursor: pointer;
+  background-color: #9e2323;
+  border-radius: 50%;
+  padding: 0.2vw;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.close-icon:hover {
+  background-color: #ff6666;
+  transform: scale(1.1);
+}
+
+button {
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: #fff;
+  padding: 1vw 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: medium;
+  margin-top: 3vh;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#chosenImagesCount {
+  margin-top: 2vh;
+}
+
+button:active {
+  background: linear-gradient(135deg, #45a049, #4caf50);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}

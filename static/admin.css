@@ -1,0 +1,141 @@
+body {
+  background-color: rgb(22, 38, 57);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  margin-top: 1vw;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12.5vw;
+  padding: 1vw;
+  text-align: center;
+  width: 70vw;
+  height: 6vh;
+  font-size: xx-large;
+}
+
+.navbar {
+  background-color: #2f3032;
+  margin-top: 1vh;
+  height: 5vh;
+  width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: left;
+}
+
+.nav-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-right: 1.5vw;
+  color: #bdbcbc;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.current {
+  color: #ffffff;
+}
+
+.next {
+  margin-right: 74vw;
+}
+
+.content {
+  width: 86vw;
+  margin-left: 7vw;
+  background-color: #bdbcbc;
+  margin-top: 3vh;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  color: #162639;
+  height: 10vh;
+  padding-bottom: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: x-large;
+  display: inline-block;
+  margin-right: 2vw;
+  align-items: center;
+}
+
+.number-animation {
+  margin-top: 0;
+  font-size: xx-large;
+  text-align: center;
+  color: #162639;
+  display: inline-block;
+}
+
+#graph {
+  background-color: #bdbcbc;
+  margin-top: 3vh;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  color: #162639;
+  height: fit-content;
+  width: 80vw;
+  margin-left: 10vw;
+}
+.tab {
+  margin-left: 6vw;
+  justify-content: space-evenly;
+  background-color: #a89bc6;
+  width: 88%;
+  padding: 1%;
+  border-radius: 10px;
+  
+
+}
+
+.progress {
+height: 2vh;
+margin-top: 0.5vh;
+margin-bottom: 0.5vh;
+overflow: hidden;
+background-color: #6e6666;
+border-radius: 5px;
+}
+
+.progress-bar {
+font-size: 12px;
+line-height: 20px;
+color: #fff;
+text-align: center;
+transition: width 0.6s ease;
+}
+
+.video-editing-bar {
+width: 0;
+background-color: #337ab7;
+}
+
+.photography-bar {
+width: 0;
+background-color: #d9534f;
+}
+tr,th,td{
+  border: 2px rgb(22, 38, 57) solid;
+}
+.us{
+  background-color: #2f3032;
+  width: 80%;
+  padding: 1.4vh;
+ margin-left: 10vw;
+}
+
+#total {
+  display: none;
+}

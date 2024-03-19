@@ -1,0 +1,102 @@
+body {
+  background-color: rgb(22, 38, 57);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  margin-top: 1vw;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12.5vw;
+  padding: 1vw;
+  text-align: center;
+  width: 70vw;
+  height: 6vh;
+  font-size: xx-large;
+}
+
+.navbar {
+  background-color: #2f3032;
+  margin-top: 1vh;
+  height: 5vh;
+  width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: left;
+}
+
+.nav-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-right: 1.5vw;
+  color: #bdbcbc;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.current {
+    color: #ffffff;
+}
+
+.next {
+    margin-right: 74vw;
+  }
+
+.content {
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heading {
+  width: 98vw;
+  margin-left: 1vw;
+  background-color: #bdbcbc;
+  margin-top: 3vh;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: #162639;
+  font-size: x-large;
+  margin-right: 2vw;
+  margin-bottom: 2vh;
+}
+
+.tab {
+    background-color: #a89bc6;
+}
+
+.progress {
+  height: 2vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  overflow: hidden;
+  background-color: #6e6666;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  transition: width 0.6s ease;
+}
+
+.video-editing-bar {
+  width: 0;
+  background-color: #337ab7;
+}
+
+.photography-bar {
+  width: 0;
+  background-color: #d9534f;
+}

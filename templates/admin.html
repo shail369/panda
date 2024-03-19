@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrator Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}" />
+  </head>
+  <body>
+    <div class="header">
+      <p>Dashboard</p>
+    </div>
+    <div class="navbar">
+      <div class="nav-item">
+        <a class="nav-link current" href="{{url_for('admin')}}">Dashboard</a>
+      </div>
+      
+      <div class="nav-item">
+        <a class="nav-link" href="{{url_for('logout')}}" style="margin-left:78vw">Sign Out</a>
+      </div>
+    </div>
+    <div class="content">
+      <div>
+        <div class="heading">Total Number of Users</div>
+        <div class="number-animation" id="totalUserNumber">0</div>
+      </div>
+      <div>
+        
+        
+      </div>
+    </div>
+    <br>
+    
+    <div class="us">User Details</div>
+    <div id="total">{{ total }}</div>
+   <br>
+    <table class="tab" style="background">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Photos Made</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+        <tr>
+          <th scope="row">{{ user['id'] }}</th>
+          <td>{{ user['username'] }}</td>
+          <td>{{ user['email'] }}</td>
+          <td>
+          <div class="progress">
+            <div class="progress-bar video-editing-bar" role="progressbar" style="width: calc(({{ user['count'] }} / {{ images }}) * 100%);" aria-valuenow="200" aria-valuemin="0" aria-valuemax="900">{{ user['count'] }}</div>
+          </div>
+          </td>
+        </tr>
+        {% endfor %}
+          
+        </tbody>
+    </table>
+</div>
+   
+    <br />
+    <br />
+    <br />
+    <br />
+   <script src="{{ url_for('static', filename='admin.js') }}"></script>
+  </body>
+</html>

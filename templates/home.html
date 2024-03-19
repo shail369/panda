@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-items">
+            <a href="{{url_for('home')}}" class="icons" id="click4"><img src="{{ url_for('static', filename='Sheta.jpg') }}" alt="" id="profile"></a>
+            <a href="{{ url_for('login') }}" class="icons"><i class="fa-solid fa-user-group"></i><div class="hidden">Sign In</div></a>
+            <a href="{{ url_for('signup') }}" class="icons"><i class="fa-solid fa-user-plus"></i><div class="hidden">Sign Up</div></a>
+        </div>  
+    </div>
+    <div class="logo">PIXEL<span class="text-secondary">PALACE</span> </div>
+    <div class="wrapper-images">
+        
+        <div class="images-line">
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')"></div>
+            </div>
+
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')"></div>
+            </div>
+        </div>
+        <div class="images-line">
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')"></div>
+            </div>
+
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')"></div>
+            </div>
+        </div>
+        <div class="images-line">
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image11.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image11.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image12.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image12.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image13.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image13.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image14.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image14.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image15.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image15.jpeg') }}')"></div>
+            </div>
+
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image11.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image11.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image12.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image12.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image13.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image13.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image14.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image14.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image15.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image15.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image11.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image11.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image12.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image12.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image13.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image13.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image14.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image14.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image15.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image15.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image11.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image11.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image12.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image12.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image13.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image13.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image14.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image14.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image15.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image15.jpeg') }}')"></div>
+            </div>
+        </div>
+        <div class="images-line">
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image16.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image16.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image17.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image17.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image18.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image18.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image19.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image19.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image20.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image20.jpeg') }}')"></div>
+            </div>
+
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image16.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image16.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image17.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image17.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image18.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image18.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image19.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image19.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image20.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image20.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image16.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image16.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image17.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image17.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image18.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image18.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image19.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image19.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image20.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image20.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image16.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image16.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image17.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image17.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image18.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image18.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image19.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image19.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image20.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image20.jpeg') }}')"></div>
+            </div>
+        </div>
+        <div class="images-line">
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')"></div>
+            </div>
+
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image1.jpeg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image2.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image3.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image4.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image5.jpeg') }}')"></div>
+            </div>
+        </div>
+        <div class="images-line">
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')"></div>
+            </div>
+
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')"></div>
+            </div>
+    
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image6.jpg') }}')">as</div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image7.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image8.jpg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image9.jpeg') }}')"></div>
+            </div>
+            <div class="line" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')">
+                <div class="img" style="background-image: url('{{ url_for('static', filename='image10.jpeg') }}')"></div>
+            </div>    
+        </div>
+    </div>
+</div>
+
+    <script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</html>

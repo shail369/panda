@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='users.css') }}">
+<body>
+    <div class="header">
+        <p>Users</p>
+    </div>
+    <div class="navbar">
+        <div class="nav-item">
+          <a class="nav-link" href="{{url_for('admin')}}">Dashboard</a>
+        </div>
+       
+        <div class="nav-item">
+            <a class="nav-link" href="{{url_for('logout')}}">Sign Out</a>
+          </div>
+    </div>
+        <div class="heading">User Details</div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Photos Made</th>
+                    <th scope="col">Slideshows Made</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar video-editing-bar" role="progressbar" style="width: 80%;" aria-valuenow="200" aria-valuemin="0" aria-valuemax="900">200</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar photography-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Add more rows for other users -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
